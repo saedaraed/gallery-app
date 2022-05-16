@@ -1,0 +1,68 @@
+.card {
+    width: 23%;
+    position: relative;
+    transition: 0.7s;
+}
+
+@media (max-width: 992px) {
+    .card {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
+}
+
+.card .content {
+    display: none;
+    position: absolute;
+    top: 0%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(187, 192, 192, 0.466);
+    transition: 0.7s;
+}
+
+.card .content .h5 {
+    font-size: 18px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-weight: bold;
+}
+
+.card .content button {
+    background-color: transparent;
+    top: 70%;
+    font-size: small;
+    font-weight: bold;
+    text-decoration: solid 1px red;
+    color: rgb(75, 44, 44);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    cursor: pointer;
+    background-color: #fff;
+    padding: 10px 15px;
+    border-radius: 12px;
+}
+
+.card .content button:hover {
+    background-color: rgb(75, 44, 44);
+    color: #fff;
+}
+
+.card:hover {
+    background-color: red;
+}
+
+.card:hover .content {
+    display: block;
+}
